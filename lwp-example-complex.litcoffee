@@ -1,15 +1,15 @@
 
-# Complex Example webLurch Application
+# Lurch Web Platform, Second Example Application
 
 ## Overview
 
-This documentation assumes that you have read [the simple example
-application](simple-example-solo.litcoffee).  This app is just a few steps
-more complex than that one.  Other example applications built with the LWP
-are [listed here](http://nathancarter.github.io/weblurch/app/index.html).
+This documentation assumes that you have seen [the simple example
+application](https://github.com/lurchmath/lwp-example-simple).  This app is
+just a few steps more complex than that one.  Once you understand this
+example, feel free to browse some of the other examples in [the Lurch
+Project's GitHub space](https://github.com/lurchmath).
 
-[A live version of this app is online here.](
-http://nathancarter.github.io/weblurch/app/complex-example.html)
+[A live version of this app is online here.](https://lurchmath.github.io/lwp-example-complex)
 
 Set the app name with the same function we used in the simple example app.
 
@@ -17,13 +17,14 @@ Set the app name with the same function we used in the simple example app.
 
 Add a source code link to the help menu, as in the simple example app.
 
-    addHelpMenuSourceCodeLink 'app/complex-example-solo.litcoffee'
+    addHelpMenuSourceCodeLink \
+        'lwp-example-complex/blob/master/lwp-example-complex.litcoffee'
 
 We also change the Help/About menu item to be specific to this demo app.
 
     window.helpAboutText =
         '<p>See the fully documented <a target="top"
-        href="https://github.com/nathancarter/weblurch/blob/master/app/complex-example-solo.litcoffee"
+        href="https://github.com/lurchmath/lwp-example-complex/blob/master/lwp-example-complex.litcoffee"
         >source code for this demo app</a>.</p>'
 
 ## Define two group types
@@ -222,7 +223,9 @@ access to the same group object as in the main, UI thread.  Rather, we get a
 simplified copy of the group, which is an object containing the members
 `id`, `typeName`, `deleted`, `text`, `html`, `parent`, `children`, and
 `data`.  These are not all documented here; see [the source code for the
-Groups plugin for details](groupsplugin.litcoffee), in `Group.toJSON()`.
+Groups plugin for
+details](https://github.com/lurchmath/lurch/blob/master/source/plugins/groupsplugin.litcoffee),
+in `Group.toJSON()`.
 
 Note that because this will be run in a background thread, we cannot make
 use of any functions defined in the current namespace.  In particular, we

@@ -30,6 +30,8 @@ Example feature 2:
  * You should see an assessment of whether those words are a name.
  * Phrases like "John Smith" and "Mary Martinez" will be judged as names,
    but long or uncapitalized phrases will not.
+ * Click the group tag, or right-click within the group, to see a popup
+   menu with a few simple options.
 
 Read the (heavily commented) code here:
 
