@@ -3,6 +3,9 @@
 
 ## Overview
 
+This source code file defines a very simple application built on the
+[Lurch Web Platform](https://github.com/lurchmath/lurch) (LWP).
+
 This documentation assumes that you have seen [the simple example
 application](https://github.com/lurchmath/lwp-example-simple).  This app is
 just a few steps more complex than that one.  Once you understand this
