@@ -14,3 +14,5 @@ Read the (heavily commented) code here:
 
  * [App code](lwp-example-complex.litcoffee) for this specific example
  * [HTML code](index.html) that loads the platform and application
+
+There is also a very simple [build process](gulpfile.litcoffee).
